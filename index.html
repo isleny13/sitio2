@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>USO DE ETIQUETAS SEMÁNTICAS Y SLIDES</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+	<link rel="stylesheet" type="text/css" href="css/themes.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+</head>
+<body>
+	<header>
+		<img src="img/fondo.webp">
+		<h1></h1>
+	</header>
+	<nav>
+		<ul>
+			<li>INICIO</li>
+			<li>SERVICIO</li>
+			<li>CONTACTOS</li>
+			<li>REGISTRARSE</li>
+		</ul>
+	</nav>
+	<main>
+	<script>
+		$(function (){
+			// slideshow
+			$("#slider1").responsiveSlides({
+				auto:true,
+				pager:true,
+				nav:true,
+				speed:200,
+				maxwidth:400,
+				namespace:"centered-btns"
+			});
+			});
+	</script>
+	<div id="wrapper">
+	<div class="rslides_container">
+			<ul class="rslides" id="slider1">
+				<li><img src="img/cip.jpg" alt="" width="150"height="150"></li>
+				<li><img src="img/liceo.webp"alt=""width="150"height="150"></li>
+				<li><img src="img/kl.webp"alt=""width="150"height="150"></li>	
+			</ul>
+		</div>	
+		</div>
+		</main>
+</body>
+</html>
